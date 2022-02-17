@@ -18,6 +18,6 @@ console.log('Revisão é a mãe do aprendizado')
 
 createPhrases()
 
-console.log('Final do programa')
+console.log('Fim do programa')
 
 // Conclusão: funções ervem para agrupamento de código, reutilização desse código, e dar significado ao código
