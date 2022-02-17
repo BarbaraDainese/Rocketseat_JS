@@ -17,3 +17,48 @@ let number2 = 25
 console.log("a soma é " + sum(number1, number2))
 console.log(total)
 
+//Função é um liquidificador
+
+function fazerSuco(fruta1, fruta2){
+    return 'suco de...' + fruta1 + fruta2
+}
+
+const copo = fazerSuco('banana', 'maçã')
+
+console.log(copo)
+
+// hoisting de função
+
+sayMyName()
+
+function sayMyName()
+{
+    console.log('Barbara')
+}
+
+//arrow function
+
+const sayLastName = ()=>{
+    console.log('Dainese')
+}
+
+sayLastName()
+
+const myNameIs = (name)=>{
+    console.log(name)
+}
+
+myNameIs('Barbara Dainese')
+
+//callback function
+
+ function myStatus(status){
+    status()
+}
+
+myStatus(
+    ()=>{
+        console.log('função callback')
+    }
+)
+
