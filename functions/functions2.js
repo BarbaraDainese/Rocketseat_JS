@@ -62,3 +62,21 @@ myStatus(
     }
 )
 
+/*
+
+    Function() constructor
+
+    * expressão new
+    * criar um novo objeto
+    * this keyword
+
+
+*/
+
+function Person(name){
+    this.name = name
+}
+
+const barbara = new Person("Barbara")
+
+console.log(barbara)
