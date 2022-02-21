@@ -75,8 +75,36 @@ myStatus(
 
 function Person(name){
     this.name = name
+    this.walk = function(){
+        return this.name + " andando"
+    }
 }
 
 const barbara = new Person("Barbara")
+const paulo = new Person("Paulo")
 
-console.log(barbara)
+console.log(barbara.walk())
+console.log(paulo.walk())
+
+/*
+    Prototype
+
+    * prototype-based language
+    * prototype chain
+    * __proto__
+*/
+
+/*
+
+    Type conversion (typecasting) vc Type coersion
+
+    * Alteração de um tipo de dado para outro tipo
+
+
+*/
+     console.log('9' + 5) // transformou (conversão coersitiva) o number para uma string -> saída = 95
+
+     console.log(Number ('9')+ 5) // conversão da string para number -> saída = 14
+
+
+
