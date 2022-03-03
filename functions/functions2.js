@@ -148,6 +148,46 @@ console.log(textWithUnderscore)
 
 console.log(text.includes("praia"))
 
+//Contar elementos de um array
+
+console.log(["a", "b", "c"].length)
+
+//Transformar uma cadeia de caracteres em elementos de um array
+
+let anyName = "manipulação"
+console.log(Array.from(anyName))
+
+// Manipulando arrays
+
+let techs = ["html", "css", "js"]
+
+//adicionar itens no fim
+techs.push("nodejs")
+
+//adicionar itens no início
+techs.unshift("sql")
+
+// remover item do final
+//techs.pop()
+
+// remover do começo
+//techs.shift()
+
+//pegar somente alguns elementos do Array
+//console.log(techs.slice(1,2))
+
+//remover um ou mais itens em qualquer posição do array
+//techs.splice(1,1)
+
+// encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
+techs.splice(index, 1)
+
+console.log(techs) 
+
+
+
+
 
 
 
