@@ -82,3 +82,67 @@ console.log(--numb)
 
 //exponencial 
 console.log(3**2)
+
+
+//Grouping operator
+
+let total = (2 + 3)*5
+
+console.log(total)
+
+//Condição
+
+//condição então valor 1 se não valor 2
+//condition ? value1 : value2
+
+//Exemplos:
+//café da manhã top
+
+let pao = true
+let queijo = true
+const niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
+
+console.log(niceBreakfast)
+
+// If ... Else
+
+let temperature = 36.9
+let higTemperature = temperature >= 37.5
+let mediumTemperature = temperature < 37.5 && temperature >= 37
+
+if(higTemperature){
+    console.log("febre alta")
+} else if(mediumTemperature){
+    console.log("temperatura média")
+}else{
+    console.log("saudável")
+}
+
+//switch
+
+function calculate(number1, operator, number2){
+    let result
+
+    switch(operator){
+        case '+':
+            result = number1 + number2
+            break
+        case '-':
+            result = number1 - number2
+            break
+        case '/':
+            result = number1 / number2
+            break
+        case'*':
+            result = number1 * number2
+            break
+        default :
+            console.log('não implementado')
+            break
+    }
+return result
+}
+
+
+console.log(calculate(4, '%', 8))
+
