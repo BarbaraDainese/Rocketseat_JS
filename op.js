@@ -146,3 +146,63 @@ return result
 
 console.log(calculate(4, '%', 8))
 
+//trow
+
+function sayName(namer = ''){
+    if (namer === ''){
+        throw 'nome é obrigatório'
+    }
+    console.log(namer)
+}
+
+//try...catch
+
+try{
+        sayName('Barbara')
+    }catch(e){
+    console.log(e)
+}
+
+//Estrutura de repetição
+//For
+
+for(let i = 10; i>=0; i--){
+    console.log(i)
+}
+
+//Estrutura de repetição
+//while
+
+let x=0
+
+while(x<10){
+    console.log(x)
+    x++
+}
+
+
+//fot...of
+
+let nameIs = 'Barbara'
+let names =['joão', 'paulo', 'roberto']
+
+for(let char of nameIs){
+    console.log(char)
+}
+
+for(let element of names){
+    console.log(element)
+}
+
+//for ... in
+
+let person2 = {
+    nome: 'Joana',
+    idade: 30,
+    peso: 56
+}
+
+for(let property in person2){
+    console.log(property)
+    console.log(person2[property])
+}
